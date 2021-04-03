@@ -8,8 +8,8 @@
 ### fetches crendentails from vault cluster
 
 data "vault_aws_access_credentials" "creds" {
-  backend = "aws"
-  role    = "dynamic-aws-creds-vault-admin"
+  backend = aws
+  role    = dynamic-aws-creds-vault-admin
 }
 
 ### fetches aws access and secert key form vault
